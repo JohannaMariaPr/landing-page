@@ -1,0 +1,37 @@
+.filter-select {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.filter-select label {
+    margin-right: 6px;
+    font-weight: 500;
+    color: #2f4f4f;
+}
+
+.filter-select select {
+    /* removes the default arrow */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    /*adds custom arrow for equal padding */
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23666' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 0.8rem center;
+    background-size: 16px;
+
+    padding: 0.6rem 2.5rem 0.6rem 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: black;
+
+    font-size: 16px;
+}
+
+.filter-select select:focus {
+    outline: none;
+    border-color: #367157;
+}

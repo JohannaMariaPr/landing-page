@@ -1,0 +1,86 @@
+.addplant {
+    max-width: 1280px;
+    margin: 32px auto;
+    padding: 0 24px;
+}
+
+
+/* Two-column form layout */
+.addplant-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 0; /* row gap / column gap */
+}
+
+/* Make textarea + button full width */
+.addplant-form textarea,
+.addplant-form .full-width,
+.submit-btn {
+    grid-column: 1 / -1;
+}
+
+.addplant-form label {
+    display: flex;
+    flex-direction: column;
+}
+
+.addplant-form input,
+.addplant-form select,
+.addplant-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 400px;
+    font-family: sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.addplant-form select {
+    /* removes the default arrow */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    padding: 0.6rem 2.5rem 0.6rem 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: black;
+
+    /*adds custom arrow for equal padding */
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23666' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 0.8rem center;
+    background-size: 16px;
+
+    font-size: 14px;
+}
+
+.addplant-form input:focus,
+.addplant-form select:focus,
+.addplant-form textarea:focus {
+    outline: none;
+    border-color: #367157;
+    color: black;
+}
+
+/* Button styling */
+.submit-btn {
+    margin-top: 20px;
+    padding: 14px 20px;
+    background-color: #367157;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2a5a45;
+    color: #a8e6a3;
+    opacity: 0.9;
+}
