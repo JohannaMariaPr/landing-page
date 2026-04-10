@@ -2,10 +2,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
 import Layout from './Layout'
 import Home from './views/Home'
-import MyPlants from './views/MyPlants'
+import Exhibitions from './views/Exhibitions'
 import About from './views/About'
-import AddPlant from './views/AddPlant'
-import UpdatePlant from './views/UpdatePlant'
+import Review from './views/Review'
+import Details from './views/Details'
 
 const router = createBrowserRouter([
   {
@@ -17,16 +17,16 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: "/my-plants",
-        element: <MyPlants />
+        path: "/exhibitions",
+        element: <Exhibitions />
       },
       {
-        path: "/add-plant",
-        element: <AddPlant />
+        path: "/review",
+        element: <Review />
       },
       {
-        path: "/update-plant/:id",
-        element: <UpdatePlant />
+        path: "/details/:id",
+        element: <Details />
       },
       {
         path: "/about",
@@ -34,10 +34,7 @@ const router = createBrowserRouter([
       }
     ]
   }
-],
-{
-  basename: "/flowerplant"
-}
+]
 )
 
 function App() {

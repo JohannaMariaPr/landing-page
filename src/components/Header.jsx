@@ -6,13 +6,12 @@ export default function Header() {
     return (
         <header className="header">
             <div className="logo">
-                <h2>FlowerPlant</h2>
+                <h2>Botanical Garden Aarhus</h2>
             </div>
             <nav className="nav">
                 <Link to="/" className="nav-link">Home</Link>
-                <Link to="/my-plants" className="nav-link">My Plants</Link>
-                <Link to="/add-plant" className="nav-link">Add a Plant</Link>
-                <Link to="/about" className="nav-link">About</Link>
+                <Link to="/exhibitions" className="nav-link">Exhibitions</Link>
+                <Link to="/review" className="nav-link">Reviews</Link>
             </nav>
         </header>
     );

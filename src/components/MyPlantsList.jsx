@@ -1,22 +1,22 @@
 import MyPlantsItem from "./MyPlantsItem.jsx";
 
-export default function MyPlantsList({ plants, setPlants }) {
-  if (plants.length === 0) {
-    return <p>No plants found.</p>;
+export default function MyPlantsList({ reviews, setReviews }) {
+  if (reviews.length === 0) {
+    return <p>No reviews found.</p>;
   }
 
   // Delete function 
-  function deletePlant(id) {
-  const isConfirmed = window.confirm("Are you sure you want to delete this plant?");
+  function deleteReview(id) {
+  const isConfirmed = window.confirm("Are you sure you want to delete this review?");
   if (isConfirmed) {
-    setPlants(plants.filter(plant => plant.id !== id));
+    setReviews(reviews.filter(review => review.id !== id));
     }
 }
 
   return (
     <div className="plant-grid">
-      {plants.map((plant) => (
-        <MyPlantsItem key={plant.id} plant={plant} deleteHandler={deletePlant}/>
+      {reviews.map((review) => (
+        <MyPlantsItem key={review.id} review={review} deleteHandler={deleteReview}/>
       ))}
     </div>
   );

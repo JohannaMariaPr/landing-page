@@ -1,4 +1,4 @@
-.addplant {
+.add-review {
     max-width: 1280px;
     margin: 32px auto;
     padding: 0 24px;
@@ -6,27 +6,27 @@
 
 
 /* Two-column form layout */
-.addplant-form {
+.add-review-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px 0; /* row gap / column gap */
 }
 
 /* Make textarea + button full width */
-.addplant-form textarea,
-.addplant-form .full-width,
+.add-review-form textarea,
+.add-review-form .full-width,
 .submit-btn {
     grid-column: 1 / -1;
 }
 
-.addplant-form label {
+.add-review-form label {
     display: flex;
     flex-direction: column;
 }
 
-.addplant-form input,
-.addplant-form select,
-.addplant-form textarea {
+.add-review-form input,
+.add-review-form select,
+.add-review-form textarea {
     padding: 12px;
     border-radius: 8px;
     border: 1px solid #ccc;
@@ -37,7 +37,7 @@
     color: black;
 }
 
-.addplant-form select {
+.add-review-form select {
     /* removes the default arrow */
     appearance: none;
     -webkit-appearance: none;
@@ -58,9 +58,9 @@
     font-size: 14px;
 }
 
-.addplant-form input:focus,
-.addplant-form select:focus,
-.addplant-form textarea:focus {
+.add-review-form input:focus,
+.add-review-form select:focus,
+.add-review-form textarea:focus {
     outline: none;
     border-color: #367157;
     color: black;
@@ -83,4 +83,13 @@
     background-color: #2a5a45;
     color: #a8e6a3;
     opacity: 0.9;
+}
+.plant-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.plant-grid p {
+    text-align: left;
 }

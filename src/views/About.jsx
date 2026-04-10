@@ -7,7 +7,7 @@ export default function About() {
 
     return (
         <>
-            <h1>About FlowerPlant</h1>
+            <h1>About Botanical Garden</h1>
             <section className="about">
                 <div className="about-container">
                     <img src={communityImage} alt="This is a picture of people in a garden." className="about-img" />
@@ -37,7 +37,7 @@ export default function About() {
                     <div className="about-text">
                         <h2>Our Purpose</h2>
                         <p>
-                            FlowerPlant exists to empower individuals to nurture plants and, in doing so, cultivate mindfulness, patience, and sustainability. 
+                            Botanical Garden exists to empower individuals to nurture plants and, in doing so, cultivate mindfulness, patience, and sustainability. 
                             By sharing knowledge, supporting each other, and celebrating the joy of greenery, we hope to build a community that grows together, one plant at a time.
                         </p>
                     </div>

@@ -76,22 +76,21 @@ h1 {
     font-size: 16px;
 }
 
-/* Plant Care Guide */
 
-.plant-guides {
+.featured-items {
     display: flex;
     flex-direction: column;
     align-items: center; /* centers the headline + grid */
     max-width: 1280px;
 }
 
-.plant-guides h2 {
+.featured-items h2 {
     color: #2f4f4f;
     font-size: 24px;
     margin-bottom: 16px;
 }
 
-.plant-guides p {
+.featured-items p {
     line-height: 1.8;
     font-size: 16px;
     text-align: center;
